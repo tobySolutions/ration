@@ -14,6 +14,7 @@ module.exports.routes = {
   //  ╦ ╦╔═╗╔╗ ╔═╗╔═╗╔═╗╔═╗╔═╗
   //  ║║║║╣ ╠╩╗╠═╝╠═╣║ ╦║╣ ╚═╗
   //  ╚╩╝╚═╝╚═╝╩  ╩ ╩╚═╝╚═╝╚═╝
+   '/': { view: 'index.html' }
   'GET /':                   { action: 'view-homepage-or-redirect' },
   'GET /friends/:virtualPageSlug?':   { action: 'friends/view-friends' },
   'GET /things/:virtualPageSlug?':     { action: 'things/view-available-things' },
